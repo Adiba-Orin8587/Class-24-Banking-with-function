@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+</head>
+
+<body class=" ">
+    <div class="bg-[url('image/bank.jpg')] bg-no-repeat bg-cover">
+        <div class="flex items-center min-h-screen ">
+            <section class="p-10 bg-sky-200 w-3/4 mx-auto space-y-3 rounded-lg shadow-2xl shadow-slate-800">
+                <h2 class="text-2xl font-medium text-slate-600">Please Login</h2>
+                <div class="space-y-3">
+                    <input id="user-email" class="block w-full rounded-lg px-3 py-1" type="text" placeholder="Email">
+                    <input id="user-password" class="block  w-full rounded-lg px-3 py-1" type="password"
+                        placeholder="Password" required>
+                    <button id="login-button"
+                        class=" bg-amber-400 w-2/4 px-3 py-2 mt-2 text-white rounded-lg">Login</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

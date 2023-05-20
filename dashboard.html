@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Main Dashboard</title>
+</head>
+
+<body class="">
+
+    <div class="bg-[url('image/dashboard.jpg')] bg-no-repeat bg-cover">
+        <div class="flex items-center min-h-screen ">
+            <section class="p-10 bg-sky-100 w-3/4 mx-auto space-y-3 shadow-2xl shadow-slate-800">
+                <h2 class="text-3xl font-medium text-center">Let's Get some <span class="text-violet-700 text-3xl">
+                        MONEEEEY
+                        !!!</span>
+                </h2>
+                <div class="grid md:grid-cols-3 sm:grid-cols-1  gap-4">
+                    <div class="bg-violet-300 p-5 text-white rounded-lg space-y-3">
+                        <h4 class="text-2xl">Deposite</h4>
+                        <h2 class="text-4xl">$
+                            <span id="deposite-total">000</span>
+                        </h2>
+                    </div>
+                    <div class="bg-amber-300 p-5 text-white rounded-lg space-y-3">
+                        <h4 class="text-2xl">Withdraw</h4>
+                        <h2 class="text-4xl">$
+                            <span id="withdraw-total">000</span>
+                        </h2>
+                    </div>
+                    <div class="bg-emerald-300 p-5 text-white rounded-lg space-y-3">
+                        <h4 class="text-2xl">Balance</h4>
+                        <h2 class="text-4xl">$
+                            <span id="balance-total">000</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-gray-400 p-5 rounded-lg space-y-3 ">
+                        <h3 class="text-white text-2xl">Please Deposite</h3>
+                        <input id="deposite" class="w-full px-3 py-1 font-semibold rounded-lg" required min="0"
+                            type="number " placeholder="$ Ammount">
+                        <button id="deposite-button"
+                            class="w-full sm:w-2/4 bg-sky-100 px-2 py-1 text-black rounded-lg mt-2">Deposite</button>
+                    </div>
+
+                    <div class="bg-red-200 p-5 rounded-lg space-y-3 ">
+                        <h3 class="text-white text-2xl">Withdraw</h3>
+                        <input id="withdraw" class="w-full px-3 py-1 font-semibold rounded-lg" required min="0"
+                            type="number " placeholder="$ Ammount">
+                        <button id="withdraw-button"
+                            class="w-full sm:w-2/4 bg-sky-100 px-2 py-1 text-black rounded-lg">Withdraw</button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
